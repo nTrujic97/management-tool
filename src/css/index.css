@@ -74,7 +74,7 @@
 
 .navigation__list--style {
 	list-style-type: none;
-	margin: 5px 15px;
+	margin: 5px 30px;
 }
 
 .navigation__list-link {
@@ -86,4 +86,44 @@
 
 .navigation__list-link:hover {
 	color: white;
+}
+
+/***************************Responsive header design***************************/
+
+@media only screen and (max-width: 600px) {
+	.navigation {
+		flex-direction: column-reverse;
+		justify-content: center;
+		height: 120px;
+	}
+
+	.navigation__search-wrapper {
+		justify-content: center;
+		width: 100%;
+		background-color: #6b5b95;
+		margin-top: 25px;
+	}
+
+	.navigation__list {
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.navigation__search-input {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.navigation {
+		height: 120px;
+	}
+
+	.navigation__search-wrapper {
+		width: 100%;
+	}
+
+	.navigation__search-input {
+		width: 50%;
+	}
 }
