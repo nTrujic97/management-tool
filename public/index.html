@@ -14,23 +14,131 @@
 	<body>
 		<header>
 			<form>
-				<div class="navbar">
-					<div class="search">
-						<input type="text" id="searchBar" placeholder="Search..." />
-						<button class="searchButton" type="submit">
-							<i class="fa fa-search fa-lg"></i>
+				<div class="navigation">
+					<div class="navigation__search-wrapper">
+						<input
+							type="search"
+							class="navigation__search-input"
+							placeholder="Search..."
+						/>
+						<button class="navigation__search-button" type="submit">
+							<i class="fa fa-search search-icon fa-lg"></i>
 						</button>
+					</div>
+					<div class="navigation__links">
+						<ul class="navigation__list">
+							<li class="navigation__list-style">
+								<a
+									class="navigation__list-link"
+									href="http://127.0.0.1:5500/public/index.html?"
+									>Homepage</a
+								>
+							</li>
+							<li class="navigation__list-style">
+								<a class="navigation__list-link" href="#" target="_blank"
+									>Calendar</a
+								>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</form>
 		</header>
+		<!---------------------------------Main content--------------------------------->
 		<main>
-			<!---------------------------------Main content--------------------------------->
-			<div class="main-list">
-				<div class="row-1">
-					<i class="fa fa-star-o" aria-hidden="true"></i>
-					<p class="list-item-1">Development Project</p>
-					<p class="list-box-1">Research and development</p>
+			<div class="row">
+				<div class="row__content">
+					<div class="row__project-wrapper">
+						<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						<p class="row__project">Development Project</p>
+					</div>
+					<div class="row__field-wrapper">
+						<p class="row__field">Research and development</p>
+						<p class="row__activity">Team-Building</p>
+					</div>
+					<div class="row__student-info">
+						<p class="row__nickname">Truja</p>
+						<p class="row__name">Nikola Trujic</p>
+						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+						<p class="row__date">7/13/2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__content">
+					<div class="row__project-wrapper">
+						<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						<p class="row__project">Industrial Project</p>
+					</div>
+					<div class="row__field-wrapper">
+						<p class="row__field">Organic Farming</p>
+						<p class="row__field">Processing</p>
+						<p class="row__field">Distribution</p>
+						<p class="row__activity">Decision-Making</p>
+					</div>
+					<div class="row__student-info">
+						<p class="row__nickname">Macak</p>
+						<p class="row__name">Ilija Ilkic</p>
+						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+						<p class="row__date">4/20/2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__content">
+					<div class="row__project-wrapper">
+						<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						<p class="row__project">Science Project</p>
+					</div>
+					<div class="row__field-wrapper">
+						<p class="row__field">Astronomy</p>
+						<p class="row__field">Astrophysics</p>
+						<p class="row__activity">Idea-Sharing</p>
+						<p class="row__activity">Status Update</p>
+					</div>
+					<div class="row__student-info">
+						<p class="row__nickname">Sreja</p>
+						<p class="row__name">Milos Srejic</p>
+						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+						<p class="row__date">29/12/2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__content">
+					<div class="row__project-wrapper">
+						<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						<p class="row__project">Chemistry Project</p>
+					</div>
+					<div class="row__field-wrapper">
+						<p class="row__field">Biochemistry</p>
+						<p class="row__activity">Problem-Solving</p>
+					</div>
+					<div class="row__student-info">
+						<p class="row__nickname">Truja</p>
+						<p class="row__name">Nenad Trujic</p>
+						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+						<p class="row__date">5/12/2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__content">
+					<div class="row__project-wrapper">
+						<i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+						<p class="row__project">Engineering Project</p>
+					</div>
+					<div class="row__field-wrapper">
+						<p class="row__field">Robotics</p>
+						<p class="row__field">Computer Science</p>
+						<p class="row__activity">Innovation</p>
+					</div>
+					<div class="row__student-info">
+						<p class="row__nickname">ćzi</p>
+						<p class="row__name">Aleksandar Lazic</p>
+						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+						<p class="row__date">1/2/2022</p>
+					</div>
 				</div>
 			</div>
 		</main>

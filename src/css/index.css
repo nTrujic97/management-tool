@@ -2,22 +2,25 @@
 	font-family: Helvetica, sans-serif;
 	box-sizing: border-box;
 	padding: 0;
+	margin: 0;
 }
 
 body {
-	margin: 0;
-	background-color: #f2f2f2;
+	background-color: #f0f0f0;
 }
 
-.navbar {
+main {
+	background-color: white;
+}
+
+.navigation {
 	height: 80px;
 	background-color: #6b5b95;
 	display: flex;
 	align-items: flex-end;
-	flex-direction: row;
 }
 
-.search {
+.navigation__search-wrapper {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
@@ -28,79 +31,190 @@ body {
 	margin: 5px;
 }
 
-#searchBar {
+.navigation__search-input {
 	width: 300px;
 	height: 30px;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+	border-radius: 8px 0px 0px 8px;
 	background-color: #f5f5f5;
 	border: 1px solid grey;
 	border-right: none;
 	outline: 0;
 	font-size: 18px;
+	padding-left: 5px;
 }
-#searchBar:hover,
-#searchBar:focus {
+.navigation__search-input:hover,
+.navigation__search-input:focus {
 	border: 1px solid #009688;
 	background-color: white;
 }
 
-.searchButton:hover {
-	border: 1px solid #009688;
+.navigation__search-button:hover {
+	border-color: #009688;
 	background-color: white;
 }
 
-div .searchButton {
+.navigation__search-button {
 	width: 50px;
 	height: 30px;
 	background-color: #f5f5f5;
 	border: 1px solid grey;
 	outline: none;
-	cursor: pointer;
 	padding: 0;
 	border-left: none;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+	border-radius: 0px 8px 8px 0px;
+	cursor: pointer;
 }
 
-div .searchButton i {
+.search-icon {
 	color: #6b5b95;
+}
+
+.navigation__links {
+	display: flex;
+	width: 100%;
+}
+
+.navigation__list {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.navigation__list-style {
+	list-style-type: none;
+	margin: 5px 30px;
+}
+
+.navigation__list-link {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #490169;
+}
+
+.navigation__list-link:hover {
+	color: white;
+}
+
+/***************************Responsive header design***************************/
+
+@media only screen and (max-width: 600px) {
+	.navigation {
+		flex-direction: column-reverse;
+		justify-content: center;
+		height: 120px;
+	}
+
+	.navigation__search-wrapper {
+		justify-content: center;
+		width: 100%;
+		background-color: #6b5b95;
+		margin-top: 25px;
+	}
+
+	.navigation__list {
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.navigation__search-input {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.navigation {
+		height: 120px;
+	}
+
+	.navigation__search-wrapper {
+		width: 100%;
+	}
+
+	.navigation__search-input {
+		width: 50%;
+	}
 }
 
 /************************************************
             main content
 ************************************************/
-.main-list {
+
+.row {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
 }
 
-.row-1 {
+.row__content {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	flex-direction: row;
-	margin: 30px 0px 10px 0px;
+	margin: 30px 0px 0px 0px;
 	border-bottom: 1px solid #6b5b95;
+	justify-content: space-between;
 }
 
-.row-1 > i {
+.row__project-wrapper {
+	display: flex;
+}
+
+.fa-star-o {
 	color: #6b5b95;
 	padding: 8px;
 	margin-left: 15px;
 }
 
-.list-item-1 {
+.row__project {
 	margin: 0;
 	margin-left: 10px;
 	padding: 8px;
 	font-weight: bold;
 }
 
-.list-box-1 {
+.row__field-wrapper {
+	display: flex;
+}
+
+.row__field {
+	margin: 0px 3px 5px 0px;
+	padding: 8px;
+	background-color: red;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+.row__activity {
+	margin: 0px 3px 5px 0px;
+	padding: 8px;
+	background-color: green;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+.row__nickname {
+	margin-right: 25px;
+	padding: 8px;
+	font-style: italic;
+}
+
+.row__name {
+	margin-right: 25px;
+	padding: 8px;
+}
+
+.fa-paperclip {
+	opacity: 0.5;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+.row__date {
 	margin: 0;
 	padding: 8px;
+	opacity: 0.6;
+}
+
+.row__student-info {
+	display: flex;
 }
