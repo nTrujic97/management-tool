@@ -5,8 +5,145 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Calendar Page</title>
+		<link rel="stylesheet" href="../src/css/calendar.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
-		<h1>This is Calendar Views</h1>
+		<header>
+			<form>
+				<div class="navigation">
+					<div class="navigation__search-wrapper">
+						<input
+							type="search"
+							class="navigation__search-input"
+							placeholder="Search..."
+						/>
+						<button class="navigation__search-button" type="submit">
+							<i class="fa fa-search search-icon fa-lg"></i>
+						</button>
+					</div>
+					<div class="navigation__links">
+						<ul class="navigation__list">
+							<li class="navigation__list-style">
+								<a
+									class="navigation__list-link"
+									href="http://127.0.0.1:5500/public/index.html?"
+									>Homepage</a
+								>
+							</li>
+							<li class="navigation__list-style">
+								<a
+									class="navigation__list-link"
+									href="http://127.0.0.1:5500/public/calendar.html"
+									target="_blank"
+									>Calendar</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="navigation__date">
+						<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>
+						<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+						<p class="navigation__month">JULY/2022</p>
+					</div>
+				</div>
+			</form>
+		</header>
+		<!---------------------------------Main content--------------------------------->
+		<main>
+			<div class="week-days">
+				<p>MO</p>
+				<p>TU</p>
+				<p>WE</p>
+				<p>TH</p>
+				<p>FR</p>
+				<p>SA</p>
+				<p>SU</p>
+			</div>
+			<div class="calendar">
+				<div class="calendar__cell"><p class="calendar__cell-number">1</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">2</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">3</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">4</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">5</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">6</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">7</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">8</p></div>
+				<div class="calendar__cell"><p class="calendar__cell-number">9</p></div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">10</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">11</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">12</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">13</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">14</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">15</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">16</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">17</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">18</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">19</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">20</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">21</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">22</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">23</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">24</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">25</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">26</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">27</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">28</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">29</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">30</p>
+				</div>
+				<div class="calendar__cell">
+					<p class="calendar__cell-number">31</p>
+				</div>
+				<p class="calendar__nmcell-number">1</p>
+				<p class="calendar__nmcell-number">2</p>
+				<p class="calendar__nmcell-number">3</p>
+				<p class="calendar__nmcell-number">4</p>
+			</div>
+		</main>
 	</body>
 </html>
